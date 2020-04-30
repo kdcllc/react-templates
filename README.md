@@ -1,3 +1,3 @@
-# React, Babel and Webpack template
+# React Templates
 
 A simple ReatJs template
