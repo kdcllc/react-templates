@@ -1,18 +1,18 @@
 // Import dependencies
-import * as React from 'react'
+import * as React from 'react';
 
 // Import TodoItem
-import TodoItem from './todo-item'
+import TodoItem from './todo-item';
 
 // Import interfaces
-import { TodoListInterface } from './../interfaces'
+import { TodoListInterface } from './../interfaces';
 
 // TodoList component
 const TodoList = (props: TodoListInterface) => {
   return (
     <div className="todo-list">
       <ul>
-        {props.todos.map((todo) => (
+        {props.todos.map(todo => (
           <li key={todo.id}>
             <TodoItem
               todo={todo}
@@ -25,7 +25,7 @@ const TodoList = (props: TodoListInterface) => {
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default TodoList
+export default TodoList;
